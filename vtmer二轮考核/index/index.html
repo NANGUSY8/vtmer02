@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>vtmer</title>
+		<!-- 重置样式表 -->
+		<link rel="stylesheet" href="../reset.css">
+		<!-- 引用样式r -->
+		<link rel="stylesheet" href="./index.css">
+	</head>
+		<!-- 引入js -->
+		<script src="http://mockjs.com/bower_components/mockjs/dist/mock.js" type="text/javascript"></script>
+		<script src="../book-mock.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../jquery-3.5.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../jQuery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../tools.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./index.js" type="text/javascript" charset="utf-8"></script>
+		<!-- 主页 -->
+		<!-- 主页的外部容器 -->
+		<div class="page-wrapper">
+			<!-- 登录按钮 -->
+			<button type="button" class="login-icon"></button>
+			<a href="#" class="userName"></a>
+			<!-- 登录表单 -->
+			<div class="form-wrapper">
+				<form id="form-login" name="loginForm"action="#" > 
+					<img class="form-logo" src="../vtmer-img/_logo.png" name="img">
+					<div class="form-text">
+						<span>账号：</span>
+						<span class="form-input"><input class="input" type="text" placeholder="用户名" name = "name"/></span>
+					</div>
+					<div class="form-text">
+						<span>密码：</span>
+						<span class="form-input"><input class="input" type="password" placeholder="*****" name="password" /></span>
+					</div>
+					<div>
+						<p id="tip-text">请输入完整信息</p>
+						<input class="login-btn" type="button"  name="submit"  value="登录" >
+					</div>
+					<a href="#" id="register">注册</a>
+					<a href="#" id="close-btn">×</a>
+				</form>
+			</div>
+			<!-- 中间内容部分 -->
+			<div class="main-content">
+				<div>
+					<img class="logo" src="../vtmer-img/_logo.png" alt="">
+				</div>
+				<div class="main-text">
+					The books that know you
+				</div>
+				<form action="../searchpage/searchPage.html"  class="searchbar">
+					<input type="text" placeholder="搜索" class="searchInput" >
+					<input type="submit" class="search-icon" value=" " />
+				</form>
+				<ul class="category">
+					<li><a href="../classpage/classPage.html#first">文学</a></li>
+					<li><a href="../classpage/classPage.html#second">哲学</a></li>
+					<li><a href="../classpage/classPage.html#third">科技</a></li>
+					<li><a href="../classpage/classPage.html#last">艺术</a></li>
+				</ul>
+			</div>
+			<div class="loading-login">
+				<p>Loading</p>
+				<ul class="loading-circle">
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,196 @@
+/* 搜索页 */
+body{
+	background-color: #F4F4F4;
+}
+
+/*  */
+.clearfix::before,
+.clearfix::after{
+content: ' ';
+display: block;
+clear:both;
+}
+/* 导航条部分 */
+/* 导航条外部容器 */
+.navbar-wrapper{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    background-color: white;
+    box-shadow: 0 0 5px;   
+    /* position: fixed; */
+    /* z-index: 1; */
+}
+
+/* 导航条 */
+.navbar{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+/* 导航条左部logo */
+.small-logo>img{
+    width: 50px;
+    margin-top: 5px;
+}
+/* 中间搜索部分 */
+/* 外部容器 */
+.searchbar{
+    width: 220px;
+    height: 20px ;
+    margin: 8px;
+    border-radius: 30px;
+    box-shadow: 0 0 2px;
+    background-color: #FCFCFC;
+    position: relative;
+}
+/* 输入框 */
+.searchInput{
+    display: block;
+    width: 170px;
+    height: 18px;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+}
+
+/* 搜索图标 */
+.search-icon{
+    width: 16px;
+    position: absolute;
+    outline: none;
+    border: none;
+    background-image: url(../vtmer-img/_search.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    position: absolute;
+    top: 1px;
+	right: 5px;
+}
+ 
+ /* 右边分类部分 */
+ .nav-class{
+	 width: 70px;
+	 height: 20px;
+	 line-height: 20px;
+	 font-size: 14px;
+	 text-decoration: none;
+	 color: #3A3838;
+	 letter-spacing: 4px;
+	 margin:  8px 20px 8px 0;
+	 border: 1px solid #9C9A80;
+	 background-color: #DCD79D;
+ }
+ /* 分类列表 */
+ .nav-class-list{
+	 /* display: none; */
+	 width: 70px;
+	 height: 0;
+	 background-color: #DCD79D;
+	 border-radius: 8px;
+	 position: absolute;
+	 right: 250px;
+	 top: 30px;
+	 z-index: 3;
+	 overflow: hidden;
+ }
+ .nav-class-list>li{
+	 width: 70px;
+	 height: 24px;
+ }
+ .nav-class-list a{
+	 color: #3A3838;
+ }
+ .nav-class-list a:hover{
+	 color: #EAA050;
+ }
+ /* 搜素的内容部分 */
+ .search-content-wrapper{
+	 width: 1520px;
+	 height: 230px;
+	 background-size: 100%;
+	 background-image: url(../vtmer-img/_banner-拷贝-3.png);
+	 background-repeat: no-repeat;
+	 position: relative;
+ }
+ 
+ .search-content{
+	 width: 120px;
+	 height: 30px;
+	 line-height: 30px;
+	 margin: 0 auto;
+	 text-align: center;
+	 color: #3A3838;
+	 position: absolute;
+	 left:46%;
+	 top: 46%;
+	 font-size: 15px;
+	 background-color: #DCD79D; 
+ }
+ hr{
+	 width: 20%;
+	 position: absolute;
+	 left: 40%;
+	 bottom: 30%;
+ }
+ /* 设置书分类列表部分 */
+ /* 设置身体外部容器 */
+ .book-wrapper{
+ 	width: 80%;
+	/* height: 950px; */
+	position: absolute;
+	left: 10%;
+	background-color: white;
+ }
+
+ /* 设置书列表的外部容器 */
+ .book-list-wrapper{
+	width:90%;
+	height: 90%;
+	margin: 20px auto;
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	justify-content:space-around;
+ 	align-items: center;
+ }
+ /* 设置每个书列表的容器 */
+ .book-list{
+ 	width: 21%;
+	/* height: 50%; */
+ 	margin: 30px auto;
+ 	text-align: center;
+ 	display: flex;
+ 	flex-direction: column;
+	justify-content: space-between;
+ }
+ /* 设置内容容器 */
+ .content-wrapper{
+ 	width: 150px;
+ 	height: 120px;
+ 	margin:0 auto;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: space-around;
+ 	border-bottom: 1.5px solid #E2E2E2;
+ }
+ /* 设置星星容器 */
+ .star-list{
+ 	display: flex;
+ 	justify-content: space-between;
+ }
+ /* 设置每个星星 */
+ .star-list>li{
+ 	width: 5px;
+ 	margin: 5px 10px;
+ }
+ .content-wrapper>a{
+ 	text-decoration: none;
+ 	color: #000000;
+ 	font-size: 14px ;
+	line-height: 14px;
+ 	font-weight: bolder; 
+	display: inline;
+	text-decoration: none;
+ }

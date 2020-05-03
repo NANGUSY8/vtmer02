@@ -1,0 +1,481 @@
+/* 分类页 */
+body{
+	width: 100%;
+	height: 160%;
+	overflow-x: hidden;
+}
+/* 导航条部分 */ 
+/* 导航条外部容器 */
+.navbar-wrapper{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background-color: white;
+    box-shadow: 0 0 5px;    
+    /* position: fixed; */
+    /* z-index: 1; */
+}
+
+/* 导航条 */
+.navbar{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+/* 导航条左部logo */
+.small-logo>img{
+    width: 50px;
+    margin-top: 5px;
+}
+/* 右边搜索部分 */
+/* 外部容器 */
+.searchbar{
+    width: 220px;
+    height: 20px ;
+    margin: 8px;
+    border-radius: 30px;
+    box-shadow: 0 0 2px;
+    background-color: #FCFCFC;
+    position: relative;
+}
+/* 输入框 */
+.searchInput{
+    display: block;
+    width: 170px;
+    height: 18px;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+}
+
+/* 搜索图标 */
+.search-icon{
+    width: 16px;
+    position: absolute;
+    outline: none;
+    border: none;
+    background-image: url(../vtmer-img/_search.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    position: absolute;
+    top: 1px;
+	right: 5px;
+}
+
+/* 轮播图部分 */
+/* 轮播图外部容器 */
+.focus{
+    overflow: hidden;
+    width: 100%;
+    height: 230px;
+    position: relative;
+}
+ 
+.focus-list{
+    position: absolute;
+    left:0;
+}
+.focus-list>li{
+    float: left;
+} 
+
+/* 轮播图第一页 */
+/* 设置外部容器 */
+#focus-first{
+    width: 1520px;
+    height: 230px;
+    background-image: url(../vtmer-img/_banner-拷贝-3.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 设置图片的宽度 */
+#focus-first img{
+    width: 70px;
+}
+
+/* 设置文字部分 */
+#focus-first span{
+    color: #3F3F3F;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+/* 轮播图第二页 */
+/* 设置外部容器 */
+#focus-second{
+    width: 1520px;
+    height: 230px;  
+    background-image: url(../vtmer-img/_banner+.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+/* 设置图片的容器 */
+#focus-second>div{
+    width: 250px;
+    margin: 0 auto;
+    position: absolute;
+    top: 25%;
+    left: 42%;
+}
+
+/* 设置图片宽度 */
+#focus-second img{
+    width: 250px;
+}
+
+/* 轮播图第三页 */
+#focus-third{
+    width: 1520px;
+    height: 230px;
+    background-image: url(../vtmer-img/_banner-拷贝-2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 文字外部容器 */
+.focus-text{
+    width: 800px;
+    height: 100px;
+    margin: 0 auto;
+    border: 2px solid #4D4947;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* 第一行文字的容器 */
+.focus-text>div{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    font-size: 18px;
+    position: relative;
+}
+
+/* 设置制表符的位置 */
+.left-tabs{
+    position: absolute;
+    left: 0px;
+    top: -10px;
+}
+.right-tabs{
+    position: absolute;
+    right: 0px;
+    top: 10px;
+}
+
+/* 设置第二行文字 */
+.focus-text>p{
+    height: 35px;
+    color: #0A0909;
+    font-size: 22px;
+}
+
+.circle{ 
+     display: flex; 
+    position: absolute; 
+    bottom: 10%; 
+}
+/* 设置小圆圈 */
+.circle>li{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0px  20px;
+    border-radius: 50%;
+	box-shadow: .5px 0 1px inset #757575;
+    /* box-shadow: 0 0 1px; */
+	background-color:#4D4947;
+}
+.current{
+	background-color: #4D4947;
+}
+/* 设置书分类列表部分 */
+/* 设置身体外部容器 */
+.body-wrapper{
+	width: 70%;
+	height: 1000px;
+	/* overflow: hidden; */
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+hr{
+	width: 96%;
+	}
+/* 设置分类菜单*/
+.menu-list{
+	display: flex;
+	height: 30px;
+	margin-top: 20px;
+	line-height: 30px;
+	font-size: 16px;
+}
+.menu-list>div{
+	margin-left: 20px;
+	color: #828282;
+}
+.menu-list>li{
+	/* font-size: 14px; */
+	margin: 0 10px;
+	
+}
+.menu-list a{
+	text-decoration: none;
+	color: black;
+	outline: none;
+}
+.menu-list a:hover{
+	color: #EAA050;
+}
+
+#current-color{
+	color: #EAA050;
+}
+
+/* 设置书列表的外部容器 */
+.book-list-wrapper{
+	height: 800px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-evenly;
+	align-items: center;
+	margin:20px 0;
+}
+/* 设置每个书列表的容器 */
+.book-list{
+	width: 21%;
+	margin: 30px auto;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+/* 设置内容容器 */
+.content-wrapper{
+	width: 150px;
+	height: 90px;
+	margin:0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	border-bottom: 1.5px solid #E2E2E2;
+}
+/* 设置星星容器 */
+.star-list{
+	display: flex;
+	justify-content: space-between;
+}
+/* 设置每个星星 */
+.star-list>li{
+	width: 5px;
+	margin: 5px 10px;
+}
+.content-wrapper>a{
+	text-decoration: none;
+	color: #000000;
+	display: inline;
+	font-size: 14px ;
+	font-weight: bolder; 
+}
+.loading{
+	width: 150px;
+	height: 40px;
+	margin: 60px auto;
+	font-size: 30px;
+}
+.loading>a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	color: #000000;
+	text-align: center;
+}
+.loading>a:hover{
+	color: #EBA050;
+}
+/* 详情页 */
+/* 遮罩层 */
+.bgcolor{
+	width: 150%;
+	height: 120%;
+	position: relative;
+	background-color: rgba(218,215,215,0.8);
+	top: -1100px;
+	left: -25%;
+	display: none; 
+}
+/* 外部容器 */
+.details-wrapper{
+	display: block;
+	width: 100%;
+	height:100%;
+	overflow: hidden;
+	animation: change 2s ease;
+	margin: 0 auto;
+	background-color: white;
+	box-shadow: 0 0 5px;
+	position: relative;
+	top: 100px;
+	z-index: 10;
+	/* margin: 0 auto;
+	background-color: white;
+	box-shadow: 0 0 5px;
+	position: relative;
+	top: 100px;
+	z-index: 10; */
+	/* transition:width 2s ease, height 2s ease; */
+	/* -moz-transition:width 2s ease, height 2s ease; /* Firefox 4 */ 
+	/* -webkit-transition:width 2s ease, height 2s ease; /* Safari and Chrome */ 
+	/* -o-transition:width 2s ease, height 2s ease; /* Opera	 */ 
+}
+.change{
+	display: block;
+	margin: 0 auto;
+	background-color: white;
+	box-shadow: 0 0 5px;
+	position: relative;
+	/* top: 100px; */
+	z-index: 10;
+	width: 66%;
+	height: 130%;
+}
+/* 关闭 */
+#details-close{
+	position: absolute;
+	right: 0;
+	border-width: 40px;
+	border-color: #57C296;
+	border-style: solid;
+	border-left-color: transparent;
+	border-bottom-color: transparent;
+}
+#details-close>a{
+	position: absolute;
+	top: -50px;
+	right: -40px;
+	text-decoration: none;
+	color: #000000;
+	font-size: 60px;
+}
+#details-close>a:hover{
+	color: #42423E;
+}
+.detail-content{
+	width: 84%;
+	height: 76%;
+	position: relative;
+	left: 8%;
+	top: 12%;
+	margin: 50px 0 0 0;
+}
+/* 左上和右下角 */
+.line-top{
+	position: absolute;
+	/* top: 12%; */
+	width: 120px;
+	border-top: 2px solid #E5D2D1;
+}
+.line-left{
+	position: absolute;
+	height:  120px;
+	border-left: 2px solid #E5D2D1;
+}
+.line-bottom{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 120px;
+	border-top: 2px solid #E5D2D1;
+}
+.line-right{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 120px;
+	border-right: 2px solid #E5D2D1;
+}
+
+/* 内容容器 */
+.detail{
+	width: 92%;
+	height: 55%;
+	padding: 60px 60px 20px 60px;
+	color: #464646;
+}
+/* 图片容器 */
+.detail-img{
+	width: 40%;
+	margin-right: 120px;
+	float: left;
+}
+/* 图片 */
+.detail-img>img{
+	width: 100%;
+}
+/* 右边详情信息 */
+/* 容器 */
+.detail-info{
+	width: 40%;
+	height: 85%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+/* 书名 */
+.detail-info>h5{
+	font-size: 35px;
+	text-align: center;
+	color: black;
+	margin-bottom: 8px;
+}
+.detail-info div{
+	height: 40px;
+	line-height: 25px;
+}
+/* 每个图片 */
+.detail-info div img{
+	height: 25px;
+	margin: 0 5px -5px 5px;
+}
+/* 文字部分 */
+.detail-info div span{
+	font-size: 20px;
+	margin: 0 5px;
+}
+/* 图书馆x楼x架 */
+.detail-info div p{
+	font-size: 20px;
+	margin-left: 190px;
+}
+.profile{
+	width: 88%;
+	margin: 0 auto;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+/* 简介部分 */
+.profile>div{
+	line-height: 30px;
+}
+.profile h6{
+	font-weight: bold;
+	font-size: 20px;
+}

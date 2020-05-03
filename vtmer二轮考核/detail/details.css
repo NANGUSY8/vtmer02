@@ -1,0 +1,141 @@
+/* 详情页 */
+body{
+	width: 100%;
+	height: 100%;
+	/* height: 2000px; */
+}
+/* 外部容器 */
+.details-wrapper{
+	width: 1000px;
+	height: 1120px;
+	margin: 100px auto;
+	background-color: white;
+	box-shadow: 0 0 5px;
+	position: relative;
+	transition: ease 0.5s; 
+}
+/* 关闭 */
+#details-close{
+	position: absolute;
+	right: 0;
+	border-width: 40px;
+	border-color: #57C296;
+	border-style: solid;
+	border-left-color: transparent;
+	border-bottom-color: transparent;
+}
+#details-close>a{
+	position: absolute;
+	top: -50px;
+	right: -40px;
+	text-decoration: none;
+	color: #000000;
+	font-size: 60px;
+}
+#details-close>a:hover{
+	color: #42423E;
+}
+.detail-content{
+	width: 84%;
+	height: 76%;
+	position: relative;
+	left: 8%;
+	top: 12%;
+	margin: 0;
+}
+/* 左上和右下角 */
+.line-top{
+	position: absolute;
+	width: 120px;
+	border-top: 2px solid #E5D2D1;
+}
+.line-left{
+	position: absolute;
+	height:  120px;
+	border-left: 2px solid #E5D2D1;
+}
+.line-bottom{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 120px;
+	border-top: 2px solid #E5D2D1;
+}
+.line-right{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 120px;
+	border-right: 2px solid #E5D2D1;
+}
+
+/* 内容容器 */
+.detail{
+	width: 92%;
+	height: 55%;
+	padding: 60px 60px 0 60px;
+	color: #464646;
+}
+/* 图片容器 */
+.detail-img{
+	width: 34%;
+	margin-right: 120px;
+	float: left;
+}
+/* 图片 */
+.detail-img>img{
+	width: 100%;
+}
+/* 右边详情信息 */
+/* 容器 */
+.detail-info{
+	width: 30%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+/* 书名 */
+.detail-info>h5{
+	font-size: 35px;
+	text-align: center;
+	color: black;
+}
+.detail-info div{
+	height: 40px;
+	line-height: 25px;
+}
+/* 每个图片 */
+.detail-info div img{
+	height: 25px;
+	margin: 0 5px -5px 5px;
+}
+/* 文字部分 */
+.detail-info div span{
+	font-size: 20px;
+	margin: 0 5px;
+}
+/* 图书馆x楼x架 */
+.detail-info div p{
+	font-size: 20px;
+	margin-left: 190px;
+}
+.profile{
+	width: 88%;
+	margin: 0 auto;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+/* 简介部分 */
+.profile>div{
+	line-height: 30px;
+}
+.profile h6{
+	font-weight: bold;
+	font-size: 20px;
+}
+.profile p{
+	font-size: 18px;
+}

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>分类页面</title>
+		<!-- 重置样式表 -->
+		<link rel="stylesheet" href="../reset.css">
+		<!-- 引用样式 -->
+		<link rel="stylesheet" href="./classPage.css">
+		
+	</head>
+	<body>
+		<!-- 引用js -->
+		<script src="../tools.js"></script>
+		<script src="./classPage.js"></script>
+		<script src="http://mockjs.com/bower_components/mockjs/dist/mock.js" type="text/javascript"></script>
+		<script src="../book-mock.js" type="text/javascript" charset="utf-8"></script>	
+		<script src="../jquery-3.5.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../jQuery.js" type="text/javascript" charset="utf-8"></script>
+		<!-- 导航条部分 -->
+		<div class="navbar-wrapper">
+			<div class="navbar">
+				<!-- 左部logo -->
+				<div class="small-logo">
+					<img src="../vtmer-img/_small-logo.png" alt="">
+				</div>
+				<!-- 右边搜索框 -->
+				<form action="../searchpage/searchPage.html" class="searchbar">
+					<input type="text" placeholder="请搜索" class="searchInput" >
+					<input type="submit"  class="search-icon" value=" " />
+				</form>
+			</div>
+		</div>
+
+		<!-- 轮播图部分 -->
+		<div class="focus">
+			<!-- 滚动区域 -->
+			<ul class="focus-list">
+				<li id="focus-first">
+					<div><img src="../vtmer-img/_书架.png" alt=""></div>
+					<span>推书,推你所想</span>
+				</li>
+				<li id="focus-second">
+					<div><img id="header-img" src="../vtmer-img/_logo.png" alt=""></div>
+				</li>
+				<li id="focus-third">
+					<div class="focus-text">
+						<div>
+							<span class="left-tabs">┌</span>
+							<span>今日推荐</span>
+							<span class="right-tabs">┘</span>
+						</div>
+						<p>震惊！维生数前端居然是这样考核</p>
+					</div>
+				</li>
+			</ul>
+			<!-- 小圆圈 -->
+			<ol class="circle">
+				<!-- <li></li>
+          <li></li>
+          <li></li> -->
+			</ol>
+		</div>
+		<!-- 设置主体内容部分 -->
+		<div class="body-wrapper">
+			<!-- 设置菜单栏部分 -->
+			<ul class="menu-list">
+				<div>分类：</div>
+				<li><a id="current-color" name="first" href="#">文学</a></li>
+				<li><a name="second" href="#">哲学</a></li>
+				<li><a name="third" href="#">科技</a></li>
+				<li><a name="last" href="#">艺术</a></li>
+			</ul>
+			<hr color=" #E2E2E2">
+			<!-- 设置书列表 -->
+			<div class="book-list-wrapper">
+				<div class="book-list">
+					<img class="cover-img" src="../vtmer-img/_cover.png" alt="">
+					<div class="content-wrapper">
+						<ul class="star-list">
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-white.png" alt=""></li>
+						</ul>
+						<a href="javascript:;" class="title">书名</a>
+						<a href="javascript:;" class="writer">作者</a>
+					</div>
+				</div>
+				<div class="book-list">
+					<img class="cover-img" src="../vtmer-img/_cover.png" alt="">
+					<div class="content-wrapper">
+						<ul class="star-list">
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-white.png" alt=""></li>
+						</ul>
+						<a href="javascript:;" class="title">书名</a>
+						<a href="javascript:;" class="writer">作者</a>
+					</div>
+				</div>
+				<div class="book-list">
+					<img class="cover-img" src="../vtmer-img/_cover.png" alt="">
+					<div class="content-wrapper">
+						<ul class="star-list">
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-white.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-white.png" alt=""></li>
+						</ul>
+						<a href="javascript:;" class="title">书名</a>
+						<a href="javascript:;" class="writer">作者</a>
+					</div>
+				</div>
+				<div class="book-list">
+					<img class="cover-img" src="../vtmer-img/_cover.png" alt="">
+					<div class="content-wrapper">
+						<ul class="star-list">
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-white.png" alt=""></li>
+						</ul>
+						<a href="javascript:;" class="title">书名</a>
+						<a href="javascript:;" class="writer">作者</a>
+					</div>
+				</div>
+				<div class="book-list">
+					<img class="cover-img" src="../vtmer-img/_cover.png" alt="">
+					<div class="content-wrapper">
+						<ul class="star-list">
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-white.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-white.png" alt=""></li>
+						</ul>
+						<a href="javascript:;" class="title">书名</a>
+						<a href="javascript:;" class="writer">作者</a>
+					</div>
+				</div>
+				<div class="book-list">
+					<img class="cover-img" src="../vtmer-img/_cover.png" alt="">
+					<div class="content-wrapper">
+						<ul class="star-list">
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-white.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-white.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-white.png" alt=""></li>
+						</ul>
+						<a href="javascript:;" class="title">书名</a>
+						<a href="javascript:;" class="writer">作者</a>
+					</div>
+				</div>
+				<div class="book-list">
+					<img class="cover-img" src="../vtmer-img/_cover.png" alt="">
+					<div class="content-wrapper">
+						<ul class="star-list">
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-white.png" alt=""></li>
+						</ul>
+						<a href="javascript:;" class="title">书名</a>
+						<a href="javascript:;" class="writer">作者</a>
+					</div>
+				</div>
+				<div class="book-list">
+					<img class="cover-img" src="../vtmer-img/_cover.png" alt="">
+					<div class="content-wrapper">
+						<ul class="star-list">
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-black.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-white.png" alt=""></li>
+							<li><img src="../vtmer-img/_star-white.png" alt=""></li>
+						</ul>
+						<a href="javascript:;" class="title">书名</a>
+						<a href="javascript:;" class="writer">作者</a>
+					</div>
+				</div>
+			</div>
+			<div class="loading"><a  href="classPage.html">加载更多</a></div>
+			<!-- 详情页 -->
+			<div class="bgcolor">
+				<div class="details-wrapper">
+					<div id="details-close"><a href="#">×</a></div>
+					<div class="detail-content">
+						<div class="line-top"></div>
+						<div class="line-left"></div>
+						<div class="line-bottom"></div>
+						<div class="line-right"></div>
+						<div class="detail">
+							<div class="detail-img"><img src="../vtmer-img/_bookcover.png"></div>
+							<ul class="detail-info">
+								<h5 class="title">书名</h5>
+								<li>
+									<div>
+										<img src="../vtmer-img/_作者-.png">
+										<span>|</span><span class="writer">作者</span>
+									</div>
+									<div>
+										<a href="javascript:;"><img src="../vtmer-img/_出.png"></a>
+										<span>|</span><span class="publish">出版社</span>
+									</div>
+								</li>
+								<li>
+									<div>
+									<img src="../vtmer-img/_时间.png"><span>|</span><span class="publishDate">出版时间</span>
+									</div>
+									<div>
+										<img src="../vtmer-img/_图书馆.png"><span>|</span>
+										<span>图书馆藏书：</span><span class="total">x本</span>
+										<p class="position">x楼x架xx</p>
+									</div>
+								</li>
+								<li>
+									<div>
+										<img src="../vtmer-img/_书-(1).png">
+										<span>|</span>
+										<a class="doubanUrl" href="javascript:;"><img src="../vtmer-img/_豆瓣-.png"></a>
+										<a class="zhihuUrl" href="javascript:;"><img src="../vtmer-img/_知乎.png"></a>
+									</div>
+									<div>
+										<img src="../vtmer-img/_购买.png">
+										<span>|</span>
+										<a class="jDUrl" href="javascript:;"><img src="../vtmer-img/_京东.png"></a>
+										<a class="DangUrl" href="javascript:;"><img src="../vtmer-img/_当当.png"></a>
+										<a class="AmazonUrl" href="javascript:;"><img src="../vtmer-img/_亚马逊.png"></a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="profile">
+							<div>
+								<h6>作者简介</h6>
+								<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+								<span class="ahthorIntro">
+									作者很帅很厉害。作者很帅很厉害。作者很帅很厉害。作者很帅很厉害
+									作者很帅很厉害。作者很帅很厉害。作者很帅很厉害。作者很帅很厉害。
+									作者很帅很厉害。作者很帅很厉害。作者很帅很厉害。</span>
+							</div>
+							<div>
+								<h6>书籍简介</h6>
+								<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+								<span class="bookIntro">
+									这本书很好看，真的。这本书很好看，真的。这本书很好看，真的。
+									这本书很好看，真的。这本书很好看，真的。这本书很好看，真的。
+									这本书很好看，真的。这本书很好看，真的。这本书很好看，真的。</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+	</body>
+</html>
